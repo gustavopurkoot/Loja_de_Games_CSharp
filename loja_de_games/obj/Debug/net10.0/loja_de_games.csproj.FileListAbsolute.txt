@@ -1,0 +1,15 @@
+C:\Users\Gusta\OneDrive\Desktop\Loja_de_games_CSharp\loja_de_games\bin\Debug\net10.0\loja_de_games.exe
+C:\Users\Gusta\OneDrive\Desktop\Loja_de_games_CSharp\loja_de_games\bin\Debug\net10.0\loja_de_games.deps.json
+C:\Users\Gusta\OneDrive\Desktop\Loja_de_games_CSharp\loja_de_games\bin\Debug\net10.0\loja_de_games.runtimeconfig.json
+C:\Users\Gusta\OneDrive\Desktop\Loja_de_games_CSharp\loja_de_games\bin\Debug\net10.0\loja_de_games.dll
+C:\Users\Gusta\OneDrive\Desktop\Loja_de_games_CSharp\loja_de_games\bin\Debug\net10.0\loja_de_games.pdb
+C:\Users\Gusta\OneDrive\Desktop\Loja_de_games_CSharp\loja_de_games\obj\Debug\net10.0\loja_de_games.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gusta\OneDrive\Desktop\Loja_de_games_CSharp\loja_de_games\obj\Debug\net10.0\loja_de_games.AssemblyInfoInputs.cache
+C:\Users\Gusta\OneDrive\Desktop\Loja_de_games_CSharp\loja_de_games\obj\Debug\net10.0\loja_de_games.AssemblyInfo.cs
+C:\Users\Gusta\OneDrive\Desktop\Loja_de_games_CSharp\loja_de_games\obj\Debug\net10.0\loja_de_games.csproj.CoreCompileInputs.cache
+C:\Users\Gusta\OneDrive\Desktop\Loja_de_games_CSharp\loja_de_games\obj\Debug\net10.0\loja_de_games.sourcelink.json
+C:\Users\Gusta\OneDrive\Desktop\Loja_de_games_CSharp\loja_de_games\obj\Debug\net10.0\loja_de_games.dll
+C:\Users\Gusta\OneDrive\Desktop\Loja_de_games_CSharp\loja_de_games\obj\Debug\net10.0\refint\loja_de_games.dll
+C:\Users\Gusta\OneDrive\Desktop\Loja_de_games_CSharp\loja_de_games\obj\Debug\net10.0\loja_de_games.pdb
+C:\Users\Gusta\OneDrive\Desktop\Loja_de_games_CSharp\loja_de_games\obj\Debug\net10.0\loja_de_games.genruntimeconfig.cache
+C:\Users\Gusta\OneDrive\Desktop\Loja_de_games_CSharp\loja_de_games\obj\Debug\net10.0\ref\loja_de_games.dll

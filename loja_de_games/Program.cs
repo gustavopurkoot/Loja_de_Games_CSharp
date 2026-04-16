@@ -94,6 +94,12 @@ class Program
                     break;
 
                 case 2:
+                    if (produtos.Count == 0)
+                    {
+                        Console.WriteLine("Nenhum produto cadastrado!");
+                        break;
+                    }
+
                     Console.WriteLine("Digite 1 para listar todos os produtos ou 2 para listar por console:");
                     int opcaoListar = int.Parse(Console.ReadLine());
 
