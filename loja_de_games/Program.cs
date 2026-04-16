@@ -3,10 +3,10 @@ using System.Collections.Generic;
 
 class Produto
 {
-    String nome;
-    double preco;
-    String Marca;
-    int quantidade;
+    public String nome;
+    public double preco;
+    public String Marca;
+    public int quantidade;
 
     public Produto(String nome, double preco, String marca, int quantidade)
     {
@@ -16,14 +16,21 @@ class Produto
         this.quantidade = quantidade;
     }
 
+    public double valorTotalEstoque()
+    {
+        return preco * quantidade;
+    }
+
     public void Exibir()
     {
         Console.WriteLine("Nome: " + nome);
         Console.WriteLine("Preço: " + preco);
         Console.WriteLine("Marca: " + Marca);
         Console.WriteLine("Quantidade: " + quantidade);
+        Console.WriteLine("Valor total do estoque: " + valorTotalEstoque());
     }
 
+}
     class Program
     {
 
@@ -60,9 +67,14 @@ class Produto
                         Console.WriteLine("Digite a quantidade do produto:");
                         int quantidade = int.Parse(Console.ReadLine());
 
-                        if (preco <= 0 || quantidade < 0)
+                        if (preco <= 0)
                         {
-                            Console.WriteLine("Preço e quantidade devem ser positivos.");
+                            Console.WriteLine("Preço deve ser maior que 0!");
+                            break;
+                        }
+                        if (quantidade < 0)
+                        {
+                            Console.WriteLine("A quantia do produto não pode ser menor que 0!");
                             break;
                         }
 
@@ -173,7 +185,13 @@ class Produto
                                 produto.nome = Console.ReadLine();
 
                                 Console.WriteLine("Novo preço:");
-                                produto.preco = double.Parse(Console.ReadLine());
+                                double novoPreco = double.Parse(Console.ReadLine());
+                                if (novoPreco <= 0)
+                                {
+                                    Console.WriteLine("Preço inválido!");
+                                    break;
+                                }
+                                produto.preco = novoPreco;
 
                                 Console.WriteLine("Nova marca:");
                                 produto.Marca = Console.ReadLine();
@@ -205,4 +223,3 @@ class Produto
         }
 
     }
-}
