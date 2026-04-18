@@ -71,7 +71,7 @@ class Program
                     Console.Write("Digite o preço do produto: ");
                     double preco = double.Parse(Console.ReadLine());
 
-                    Console.Write("Digite o console (PS5, Xbox, etc): ");
+                    Console.Write("Digite o console (PlayStation, Xbox, Nintendo, etc): ");
                     string nomeConsole = Console.ReadLine();
                     ConsoleGame console = new ConsoleGame(nomeConsole);
 
