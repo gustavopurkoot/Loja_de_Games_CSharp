@@ -50,6 +50,7 @@ class Program
         produtos.Add(new Produto("God of War", 199.90, new ConsoleGame("PlayStation"), 10));
         produtos.Add(new Produto("Halo Infinite", 249.90, new ConsoleGame("Xbox"), 5));
         produtos.Add(new Produto("Zelda: Breath of the Wild", 299.90, new ConsoleGame("Nintendo"), 8));
+        produtos.Add(new Produto("The Last of Us", 279.90, new ConsoleGame("PlayStation"), 7));
 
         int opcao = 0;
         string nomeBuscar;
