@@ -46,6 +46,11 @@ class Program
     static void Main()
     {
         List<Produto> produtos = new List<Produto>();
+
+        produtos.Add(new Produto("God of War", 199.90, new ConsoleGame("PlayStation"), 10));
+        produtos.Add(new Produto("Halo Infinite", 249.90, new ConsoleGame("Xbox"), 5));
+        produtos.Add(new Produto("Zelda: Breath of the Wild", 299.90, new ConsoleGame("Nintendo"), 8));
+
         int opcao = 0;
         string nomeBuscar;
 
@@ -242,13 +247,15 @@ class Program
                     Console.WriteLine("Valor total geral do estoque: " + totalGeral);
                     break;
 
+                case 7:
+                    Console.WriteLine("Encerrando...");
+                    break;
+
                 default:
                     Console.WriteLine("Opção inválida!");
                     break;
             }
 
         } while (opcao != 7);
-
-        Console.WriteLine("Encerrando...");
     }
 }
