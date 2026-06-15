@@ -71,8 +71,6 @@ https://github.com/gustavopurkoot
 Lucas Eduardo Abrantes Kirsten
 https://github.com/olucaskirsten
 
-Menando Sales Neto
-
 ## 📄 Licença
 
 Este projeto é apenas para fins educacionais.
