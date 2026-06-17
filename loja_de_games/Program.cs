@@ -207,23 +207,32 @@ class Program
                             Console.WriteLine("Produto encontrado! Digite os novos dados:");
 
                             Console.Write("Novo nome: ");
-                            produto.nome = Console.ReadLine();
+                            string novoNome = Console.ReadLine();
 
                             Console.Write("Novo preço: ");
                             double novoPreco = double.Parse(Console.ReadLine());
-                            if (novoPreco <= 0)
-                            {
-                                Console.WriteLine("Preço inválido!");
-                                break;
-                            }
-                            produto.preco = novoPreco;
 
                             Console.Write("Novo console: ");
                             string novoConsole = Console.ReadLine();
-                            produto.console = new ConsoleGame(novoConsole);
 
                             Console.Write("Nova quantidade: ");
-                            produto.quantidade = int.Parse(Console.ReadLine());
+                            int novaQuantidade = int.Parse(Console.ReadLine());
+
+                            if (novoPreco <= 0)
+                            {
+                                Console.WriteLine("Preço inválido! Atualização cancelada.");
+                                break;
+                            }
+                            if (novaQuantidade < 0)
+                            {
+                                Console.WriteLine("Quantidade inválida! Atualização cancelada.");
+                                break;
+                            }
+
+                            produto.nome = novoNome;
+                            produto.preco = novoPreco;
+                            produto.console = new ConsoleGame(novoConsole);
+                            produto.quantidade = novaQuantidade;
 
                             Console.WriteLine("Produto atualizado com sucesso!");
                             atualizado = true;
