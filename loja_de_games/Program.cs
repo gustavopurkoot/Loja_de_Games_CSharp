@@ -10,6 +10,16 @@ class Produto
 
     public Produto(string nome, double preco, ConsoleGame console, int quantidade)
     {
+        if (preco <= 0)
+        {
+            throw new ArgumentException("O preço deve ser maior que zero!");
+        }
+
+        if (quantidade < 0)
+        {
+            throw new ArgumentException("A quantidade não pode ser negativa!");
+        }
+
         this.nome = nome;
         this.preco = preco;
         this.console = console;
@@ -84,19 +94,15 @@ class Program
                     Console.Write("Digite a quantidade do produto: ");
                     int quantidade = int.Parse(Console.ReadLine());
 
-                    if (preco <= 0)
+                    try
                     {
-                        Console.WriteLine("Preço deve ser maior que 0!");
-                        break;
+                        produtos.Add(new Produto(nome, preco, console, quantidade));
+                        Console.WriteLine("Produto cadastrado com sucesso!");
                     }
-                    if (quantidade < 0)
+                    catch (ArgumentException e)
                     {
-                        Console.WriteLine("Quantidade inválida!");
-                        break;
+                        Console.WriteLine(e.Message);
                     }
-
-                    produtos.Add(new Produto(nome, preco, console, quantidade));
-                    Console.WriteLine("Produto cadastrado com sucesso!");
                     break;
 
                 case 2:
